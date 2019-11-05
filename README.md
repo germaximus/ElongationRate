@@ -39,3 +39,12 @@ gffread GRCm38.p6.Refseq.coding.gff -T -o GRCm38.p6.Refseq.coding.gtf
 # -T          - convert gff/gtf
 ```
 </details>
+
+
+<details><summary><b>Extract ORF sequences</b></summary>
+
+
+</details>
+
+
+
