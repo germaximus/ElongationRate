@@ -43,7 +43,7 @@ gffread GRCm38.p6.Refseq.coding.gff -T -o GRCm38.p6.Refseq.coding.gtf
 
 <details><summary><b>Extract ORF sequences</b></summary>  
 
-**fetch all mRNA records**  
+**Fetch all mRNA records**  
 Run ```mRNA_extractor.pl```. First, it takes ```GRCm38.p6.gbk``` and extracts all RefSeq records for every gene including CDS, 5UTR, 3UTR lengths and a sequence. Then, it selects the single RefSeq record as the longest isoform. Sometimes, the ORF lengths of two isoforms are equal, in that case the longest isoform is selected based on the UTR length with 5UTR taking precedence over 3UTR. The script also trims mRNAs by 100 nucleotides flanking CDS.  If 5UTR and/or 3UTR are shorter than 100 nt, it raises a "flag".  
 
 ```bash
