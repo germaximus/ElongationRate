@@ -62,7 +62,7 @@ Run ```mRNA_extractor.pl```. First, it takes ```GRCm38.p6.gbk``` and extracts al
 
 ```bash
  perl mRNA_extractor.pl /path/GRCm38.p6.gbk
- # creates an output file named mRNA_extract
+ # creates an output file named temp3
 ```
 Fill missing 5UTR and 3UTRs with genomic sequences in cases when they are shorter than 100 nt.  
 ```bash
