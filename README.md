@@ -45,10 +45,10 @@ gffread GRCm38.p6.Refseq.coding.gff -T -o GRCm38.p6.Refseq.coding.gtf
 
 **Fetch all mRNA records**  
 
-extract all mRNA lines from GRCm38.p6.gff3 annotarion  
+extract all mRNA lines from custom GRCm38.p6.Refseq.coding.gff annotarion  
 ```perl
 #!/usr/bin/perl
-open (INPUT, "<$ARGV[0]"); open (OUT, ">mRNA_extract.gff3");
+open (INPUT, "<GRCm38.p6.Refseq.coding.gff"); open (OUT, ">mRNA_extract.gff3");
 while ($line = <INPUT>) {     
      @line=split /\t/, $line;
      if ($line[2] eq 'mRNA') {  print OUT $line;  }
