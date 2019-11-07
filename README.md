@@ -53,7 +53,7 @@ Run ```mRNA_extractor.pl```. First, it takes ```GRCm38.p6.gbk``` and extracts al
 Fill missing 5UTR and 3UTRs with genomic sequences in cases when they are shorter than 100 nt.  
 ```bash
 perl mRNA_genome_filler.pl 
-# requires requires temp3 and individual chromosomal *.fa files in the same folder.
+# requires requires temp3 from the previous step in the same folder
 ```
 
 </details>
