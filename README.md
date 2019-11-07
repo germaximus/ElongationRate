@@ -44,6 +44,19 @@ gffread GRCm38.p6.Refseq.coding.gff -T -o GRCm38.p6.Refseq.coding.gtf
 <details><summary><b>Extract ORF sequences</b></summary>  
 
 **Fetch all mRNA records**  
+
+```perl
+# extract all mRNA lines from GRCm38.p6.gff3 annotarion
+open (INPUT, "<GRCm38.p6.gff3"); open (OUT, ">mRNA_extract.gff3");
+while ($line == <INPUT>) {
+     @line=split /\t/, $line;
+     if ($line[2] == 'mRNA') {  print OUT $line;  }
+}
+close(INPUT); close(OUT);
+```
+
+
+
 Run ```mRNA_extractor.pl```. First, it takes ```GRCm38.p6.gbk``` and extracts all RefSeq records for every gene including CDS, 5UTR, 3UTR lengths and a sequence. Then, it selects the single RefSeq record as the longest isoform. Sometimes, the ORF lengths of two isoforms are equal, in that case the longest isoform is selected based on the UTR length with 5UTR taking precedence over 3UTR. The script also trims mRNAs by 100 nucleotides flanking CDS.  If 5UTR and/or 3UTR are shorter than 100 nt, it raises a "flag".  
 
 ```bash
