@@ -61,7 +61,10 @@ perl mRNA_genome_filler.pl
 mRNA_100.fasta file contains transcripts that can share high degree of homology. It is beneficial to eliminate highly similar transcripts prior to engaging to the main ribo-seq analysis. Run nucleotide blast in all vs. all mode
 
 ```bash
-blastall -p blastn -m 8 -b 500 -v 500 -e 0.001 -d ..\db\mRNA_100.fna -i ..\db\mRNA_100.fna -o ..\db\blast_result.txt
+# build a database with local sequences
+makeblastdb -in mRNA_100.fasta -title "mRNA_100" -dbtype nucl
+# blast all sequences against each other
+blastn -task blastn -num_threads 4 -outfmt 6 -evalue 0.001 -db mRNA_100.fasta -query mRNA_100.fasta -out blast_result.txt   
 ```
 
 Run BLASTNprocessor.pl to extract unique non-redundant genes from blast_result.txt 
