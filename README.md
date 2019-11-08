@@ -3,7 +3,8 @@
 **Prerequisites:**  
 [cutadapt 2.5](https://cutadapt.readthedocs.io/en/stable/index.html)  
 [STAR-2.7.2b](https://github.com/alexdobin/STAR)  
-[gffread utility](http://ccb.jhu.edu/software/stringtie/gff.shtml)  
+[gffread utility](http://ccb.jhu.edu/software/stringtie/gff.shtml)
+[blast+ 2.9.0](https://blast.ncbi.nlm.nih.gov/)
 
 Transcriptome (polyA captured mRNA-seq) samples were sequenced in PE100 mode on Illumina sequencer. Libraries were prepared with Nextera kit.
 Raw sequencing files are available from [GEO]().
@@ -54,7 +55,19 @@ Fill missing 5UTR and 3UTRs with genomic sequences in cases when they are shorte
 ```bash
 perl mRNA_genome_filler.pl 
 # requires requires temp3 from the previous step in the same folder
+# outputs mRNA_100.fasta file
 ```
+
+mRNA_100.fasta file contains transcripts that can share high degree of homology. It is beneficial to eliminate highly similar transcripts prior to engaging to the main ribo-seq analysis. Run nucleotide blast in all vs. all mode
+
+```bash
+blastall -p blastn -m 8 -b 500 -v 500 -e 0.001 -d ..\db\mRNA_100.fna -i ..\db\mRNA_100.fna -o ..\db\blast_result.txt
+```
+
+Run BLASTNprocessor.pl to extract unique non-redundant genes from blast_result.txt 
+Warning: selected blast parameters are strict, and often assign a good score to a pair of genes, but the genes are not too similar.
+
+
 
 </details>
 
