@@ -67,9 +67,10 @@ makeblastdb -in mRNA_100.fasta -title "mRNA_100" -dbtype nucl
 blastn -task blastn -num_threads 4 -outfmt 6 -evalue 0.001 -db mRNA_100.fasta -query mRNA_100.fasta -out blast_result.txt   
 ```
 
-Run BLASTNprocessor.pl to extract unique non-redundant genes from blast_result.txt 
-Warning: selected blast parameters are strict, and often assign a good score to a pair of genes, but the genes are not too similar.
-
+Extract non-redundant genes from ```blast_result.txt```. Selected blast parameters are not very strict and often assign a good score to a pair of genes that are not too similar.   
+```bash
+BLASTNprocessor.pl blast_result.txt
+```
 
 
 </details>
