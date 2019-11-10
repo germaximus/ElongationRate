@@ -3,6 +3,7 @@
 **Prerequisites:**  
 [cutadapt 2.5](https://cutadapt.readthedocs.io/en/stable/index.html)  
 [STAR-2.7.2b](https://github.com/alexdobin/STAR)  
+[bowtie 1.2.3](http://bowtie-bio.sourceforge.net/index.shtml)
 [gffread utility](http://ccb.jhu.edu/software/stringtie/gff.shtml)  
 [blast+ 2.9.0](https://blast.ncbi.nlm.nih.gov/)
 
@@ -42,7 +43,7 @@ gffread GRCm38.p6.Refseq.coding.gff -T -o GRCm38.p6.Refseq.coding.gtf
 </details>
 
 
-<details><summary><b>Extract ORF sequences</b></summary>  
+<details><summary><b>Extract ORF sequences for translation rate estimation</b></summary>  
 
 **Fetch all mRNA records**  
 Run ```mRNA_extractor.pl```. First, it takes ```GRCm38.p6.gbk``` and extracts all RefSeq records for every gene including CDS, 5UTR, 3UTR lengths and a sequence. Then, it selects the single RefSeq record as the longest isoform. Sometimes, the ORF lengths of two isoforms are equal, in that case the longest isoform is selected based on the UTR length with 5UTR taking precedence over 3UTR. The script also trims mRNAs by 100 nucleotides flanking CDS.  If 5UTR and/or 3UTR are shorter than 100 nt, it raises a "flag".  
@@ -70,10 +71,17 @@ blastn -task blastn -num_threads 4 -outfmt 6 -evalue 0.001 -db mRNA_100.fasta -q
 Extract non-redundant genes from ```blast_result.txt```. Selected blast parameters are not very strict and often assign a good score to a pair of genes that are not too similar.   
 ```bash
 BLASTNprocessor.pl blast_result.txt
+# outputs mRNA_100uniq.fasta file
 ```
-
-
 </details>
 
 
+<details><summary><b>Mapping ribosomal footprints to unique ORFs</b></summary>  
+ 
+Build a Bowtie index out of ```mRNA_100uniq.fasta```  
+```bash
+bowtie-build  ./bowtie/genomes/mRNA_100uniq.fasta ./bowtie/Mouse_indices/mRNA_100uniq
 
+```
+ 
+<\details>
