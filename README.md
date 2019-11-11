@@ -81,7 +81,7 @@ Two sets of indexed primers were used for library multiplexing. One set has 6-nt
 <details><summary><b>Table of custom 6-nt index sequences used to multiplex libraries</b></summary>  
  
 
-<\details>
+</details>
 
 <details><summary><b>Table of custom 8-nt index sequences used to multiplex libraries</b></summary>  
 
@@ -99,7 +99,7 @@ Two sets of indexed primers were used for library multiplexing. One set has 6-nt
 | Ribo-seq Index 10 | TCCTCTAC                |  19-month old mice                 |
 | Ribo-seq Index 11 | CCTGAGAT                |  19-month old mice                 |
 | Ribo-seq Index 12 | TAGCGAGT                |  19-month old mice                 |  
-<\details>
+</details>
 
 
 Libraries of 19-month old mice were prepared with custom 8-nt barcodes and sequenced at Novogene in 150 PE mode. Ribosomal footprints are short, therefore only the forward read file (R1) is needed and the R2 file can be discarded.  
@@ -109,7 +109,7 @@ cutadapt -u 1 -m 23 -a AGATCGGAAGAGCACACGTCT --discard-untrimmed
 ```
 
 
-<\details>
+</details>
 
 
 
@@ -123,4 +123,4 @@ bowtie-build  ./bowtie/genomes/mRNA_100uniq.fasta ./bowtie/Mouse_indices/mRNA_10
 
 ```
  
-<\details>
+</details>
