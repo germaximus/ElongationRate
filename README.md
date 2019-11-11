@@ -102,11 +102,25 @@ Two sets of indexed primers were used for library multiplexing. One set has 6-nt
 </details>
 
 
-Libraries of 19-month old mice were prepared with custom 8-nt barcodes and sequenced at Novogene in 150 PE mode. Ribosomal footprints are short, therefore only the forward read file (R1) is needed and the R2 file can be discarded.  
+Libraries of 19-month old mice were prepared with custom 8-nt barcodes and sequenced at Novogene in 150 PE mode. Ribosomal footprints are short, therefore only the forward read file (R1) is needed and the R2 file can be discarded. It is also more convenient to trim and remove rRNA reads from the pooled library before demultiplexing.  
 
 ```bash
-cutadapt -u 1 -m 23 -a AGATCGGAAGAGCACACGTCT --discard-untrimmed
+cutadapt -j 25 -u 1 -m 23 -a AGATCGGAAGAGCACACGTCT --discard-untrimmed -o trimmed.fastq input.fastq
+# j - number of processors
+# u - delete first nucleotide of each read
+# m - minimum length after adapter trimming
 ```
+
+Remove ribosomal contaminants  
+```bash
+
+
+```
+Demultiplex  
+```bash
+
+```
+
 
 
 </details>
