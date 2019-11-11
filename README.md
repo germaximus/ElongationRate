@@ -77,7 +77,13 @@ BLASTNprocessor.pl blast_result.txt
 
 <details><summary><b>Pre-process ribosomal profiling reads</b></summary>  
 
-**Table of custom index sequences used to multiplex libraries**  
+Two sets of indexed primers were used for library multiplexing. One set has 6-nt barcodes and the other 8-nt barcodes.  
+<details><summary><b>Table of custom 6-nt index sequences used to multiplex libraries</b></summary>  
+ 
+
+<\details>
+
+<details><summary><b>Table of custom 8-nt index sequences used to multiplex libraries</b></summary>  
 
 | Index             | 8-nt barcode sequence   | Mice where it was used             |
 | ------------------|:-----------------------:| -----------------------------------|
@@ -92,8 +98,8 @@ BLASTNprocessor.pl blast_result.txt
 | Ribo-seq Index 9  | AGCGTAGC                |  19-month old mice                 |
 | Ribo-seq Index 10 | TCCTCTAC                |  19-month old mice                 |
 | Ribo-seq Index 11 | CCTGAGAT                |  19-month old mice                 |
-| Ribo-seq Index 11 | TAGCGAGT                |  19-month old mice                 |  
-
+| Ribo-seq Index 12 | TAGCGAGT                |  19-month old mice                 |  
+<\details>
 
 
 Libraries of 19-month old mice were prepared with custom 8-nt barcodes and sequenced at Novogene in 150 PE mode. Ribosomal footprints are short, therefore only the forward read file (R1) is needed and the R2 file can be discarded.  
