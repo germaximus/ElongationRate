@@ -77,7 +77,7 @@ BLASTNprocessor.pl blast_result.txt
 
 <details><summary><b>Pre-process ribosomal profiling reads</b></summary>  
 
-| Table of index sequences used to multiplex libraries |||
+**Table of custom index sequences used to multiplex libraries**  
 | Index             | 8-nt barcode sequence   | Mice where it was used             |
 | ------------------|:-----------------------:| -----------------------------------|
 | Ribo-seq Index 1  | TCGCCTTA                |  19-month old mice                 |
