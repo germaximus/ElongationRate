@@ -75,6 +75,37 @@ BLASTNprocessor.pl blast_result.txt
 ```
 </details>
 
+<details><summary><b>Pre-process ribosomal profiling reads</b></summary>  
+
+| Index             | 8-nt barcode sequence   | Mice where it was used             |
+| ------------------|:-----------------------:| -----------------------------------|
+| Ribo-seq Index 1  | TCGCCTTA                |  19-month old mice                 |
+| Ribo-seq Index 2  | CTAGTACG                |  19-month old mice                 |
+| Ribo-seq Index 3  | TTCTGCCT                |  19-month old mice                 |
+| Ribo-seq Index 4  | GCTCAGGA                |  19-month old mice                 | 
+| Ribo-seq Index 5  | AGGAGTCC                |  19-month old mice                 |
+| Ribo-seq Index 6  | CATGCCTA                |  19-month old mice                 |
+| Ribo-seq Index 7  | GTAGAGAG                |  19-month old mice                 |
+| Ribo-seq Index 8  | CCTCTCTG                |  19-month old mice                 |
+| Ribo-seq Index 9  | AGCGTAGC                |  19-month old mice                 |
+| Ribo-seq Index 10 | TCCTCTAC                |  19-month old mice                 |
+| Ribo-seq Index 11 | CCTGAGAT                |  19-month old mice                 |
+| Ribo-seq Index 11 | TAGCGAGT                |  19-month old mice                 |  
+
+
+
+Libraries of 19-month old mice were prepared with custom 8-nt barcodes and sequenced at Novogene in 150 PE mode. Ribosomal footprints are short, therefore only the forward read file (R1) is needed and the R2 file can be discarded.  
+
+```bash
+cutadapt -u 1 -m 23 -a AGATCGGAAGAGCACACGTCT --discard-untrimmed
+```
+
+
+<\details>
+
+
+
+
 
 <details><summary><b>Mapping ribosomal footprints to unique ORFs</b></summary>  
  
