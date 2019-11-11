@@ -104,7 +104,7 @@ Two sets of indexed primers were used for library multiplexing. One set has 6-nt
 
 <details><summary><b>Ribo-seq of livers from 19-month old mice</b></summary>  
  
-Liver Ribo-seq libraries of 19-month old mice were prepared with custom 8-nt barcodes and sequenced at Novogene in 150 PE mode. Total 12 libraries were pooled together and sequenced on a single lane. Ribosomal footprints are short, therefore only the forward read file (R1) is needed and the R2 file can be discarded. It is also more convenient to trim and remove rRNA reads from the pooled library before demultiplexing.  
+Liver Ribo-seq libraries of 19-month old mice were prepared with custom 8-nt barcodes and sequenced at Novogene in 150 PE mode. Total 12 libraries were pooled together and sequenced on a single lane. Ribosomal footprints are short, therefore only the forward read file (R1) is needed and the R2 file can be discarded. It is also more convenient to trim and remove rRNA reads from the pooled library before demultiplexing. If you are reproducing this analysis by downloading raw data from NCBI GEO repository, then demultiplexing was already done, but you still have to trimm and remove ribosomal contaminants from individual files.   
 
 ```bash
 cutadapt -j 25 -u 1 -m 23 -a AGATCGGAAGAGCACACGTCT --discard-untrimmed -o trimmed.fastq input.fastq
