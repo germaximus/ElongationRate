@@ -136,10 +136,10 @@ perl BarcodeSplitter_8nt.pl genomic.fastq
 
 <details><summary><b>Mapping ribosomal footprints to unique ORFs</b></summary>  
  
-Build a Bowtie index out of ```mRNA_100uniq.fasta```  
+Build a Bowtie index out of ```mRNA_100uniq.fasta``` and ribosomal RNA    
 ```bash
 bowtie-build  ./bowtie/genomes/mRNA_100uniq.fasta ./bowtie/Mouse_indices/mRNA_100uniq
-
+bowtie-build  ./bowtie/genomes/Mouse_rmtRNA.fasta ./bowtie/Mouse_indices/rmtRNA
 ```
  
 </details>
