@@ -118,9 +118,9 @@ Remove ribosomal contaminants
 ```bash
  bowtie -p 20 -v 2 --un genomic.fastq ../bowtie-1.2.3/Mouse_indices/rmtRNA trimmed.fastq >/dev/null
 ```
-Demultiplex  
+Demultiplex pooled library into 12 individual samples  
 ```bash
-
+perl BarcodeSplitter_8nt.pl genomic.fastq
 ```
 </details>
 
