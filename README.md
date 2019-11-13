@@ -147,7 +147,17 @@ Align ribosomal fotprints against ```mRNA_100uniq.fasta```
 ```
 </details>
 
-<details><summary><b>Mapping ribosomal footprints to unique ORFs</b></summary>  
+<details><summary><b>Quick and dirty way of making Ribosome coverage plots</b></summary>  
+ 
+ Run custom perl scipts to calculate ORFs coverage profiles and a metaprofile for every sample.   
+ ```bash
+ perl Coverage.pl uniq.bwt
+ # requires mRNA_100uniq.fastq in the same folder with uniq.bwt
+ perl Coverage_processor.pl 2000 start *.coverage
+ ```
+</details>
+
+<details><summary><b>R-friendly ribosome coverage plots</b></summary>  
  
  Run custom perl scipts to calculate ORFs coverage profiles and a metaprofile for every sample.   
  ```bash
