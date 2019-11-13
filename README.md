@@ -141,5 +141,11 @@ Build a Bowtie index out of ```mRNA_100uniq.fasta``` and ribosomal RNA
 bowtie-build  ./bowtie/genomes/mRNA_100uniq.fasta ./bowtie/Mouse_indices/mRNA_100uniq
 bowtie-build  ./bowtie/genomes/Mouse_rmtRNA.fasta ./bowtie/Mouse_indices/rmtRNA
 ```
+Align ribosomal fotprints against ```mRNA_100uniq.fasta```  
+```bash
+ bowtie -p 20 -v 2 -m 1 --norc --max /sample/redundant.fastq /bowtie-1.2.3/Mouse_indices/mRNA_100uniq /sample/genomic.fastq >uniq.bwt
+```
  
 </details>
+
+
