@@ -145,7 +145,14 @@ Align ribosomal fotprints against ```mRNA_100uniq.fasta```
 ```bash
  bowtie -p 20 -v 2 -m 1 --norc --max /sample/redundant.fastq /bowtie-1.2.3/Mouse_indices/mRNA_100uniq /sample/genomic.fastq >uniq.bwt
 ```
- 
 </details>
 
-
+<details><summary><b>Mapping ribosomal footprints to unique ORFs</b></summary>  
+ 
+ Run custom perl scipts to calculate ORFs coverage profiles and a metaprofile for every sample.   
+ ```bash
+ perl Coverage.pl uniq.bwt
+ # requires mRNA_100uniq.fastq in the same folder with uniq.bwt
+ perl Coverage_processor.pl 2000 start *.coverage
+ ```
+</details>
