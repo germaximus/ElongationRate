@@ -183,6 +183,8 @@ Transfer coverage files to a separate folder, give them appropriate names, for i
 |   MI43SKM.coverage          |   30              |   skeletal   |   3    |
 |   MI44K.coverage            |   45              |   kidney     |   3    |
 |   MI44Li.coverage           |   45              |   liver      |   3    |
+|   MI45Li.coverage           |   60              |   liver      |   3    |
+|   MI45K.coverage            |   60              |   kidney     |   3    |
 |   MI50K.coverage            |   15              |   kidney     |   3    |
 |   MI50Li.coverage           |   15              |   liver      |   3    |
 |   MI51K.coverage            |   15              |   kidney     |   3    | 
@@ -194,6 +196,8 @@ Transfer coverage files to a separate folder, give them appropriate names, for i
 |   MI53K.coverage            |   45              |   kidney     |   3    |
 |   MI53Li.coverage           |   45              |   liver      |   3    |
 |   MI53SKM.coverage          |   45              |   skeletal   |   3    |
+|   MI54Li.coverage           |   60              |   liver      |   3    |
+|   MI54K.coverage            |   60              |   kidney     |   3    |
 |   MI70SKM.coverage          |   15              |   skeletal   |   3    |
 |   MI71K.coverage            |   15              |   kidney     |   3    |
 |   MI71Li.coverage           |   15              |   liver      |   3    |
@@ -202,11 +206,15 @@ Transfer coverage files to a separate folder, give them appropriate names, for i
 |   MI72Li.coverage           |   30              |   liver      |   3    |
 |   MI72SKM.coverage          |   30              |   skeletal   |   3    |
 |   MI73K.coverage            |   45              |   kidney     |   3    |
+|   MI74Li.coverage           |   60              |   liver      |   3    |
+|   MI74K.coverage            |   60              |   kidney     |   3    |
 |   MI75K.coverage            |   15              |   kidney     |   3    |
 |   MI76K.coverage            |   30              |   kidney     |   3    |
 |   MI77K.coverage            |   45              |   kidney     |   3    |
 |   MI77Li.coverage           |   45              |   liver      |   3    |
 |   MI77SKM.coverage          |   45              |   skeletal   |   3    |
+|   MI78Li.coverage           |   60              |   liver      |   3    |
+|   MI78K.coverage            |   60              |   kidney     |   3    |
 |   MI13-16poolLi.coverage    |   300             |   liver      |   3    |
 |   MI13-16poolK.coverage     |   300             |   kidney     |   3    |
 |   MI13-16poolSKM.coverage   |   300             |   skeletal   |   3    |
