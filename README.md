@@ -169,7 +169,7 @@ Transfer coverage files to a separate folder, give them appropriate names, for i
 <details><summary>Table</summary> 
 
 | Sample coverage file        | timepoint (sec)   |    organ     |   age  |
-| --------------------------- |:-----------------:| -:----------:| :----: |
+| --------------------------- |:-----------------:| :----------: | :----: |
 |   MI26K.coverage            |   0               |   kidney     |   3    |
 |   MI26Li.coverage           |   0               |   liver      |   3    |
 |   MI26SKM.coverage          |   0               |   skeletal   |   3    |
@@ -221,7 +221,7 @@ Transfer coverage files to a separate folder, give them appropriate names, for i
 |   MI120Li.coverage          |   45              |   liver      |   18   |
 |   MI122Li.coverage          |   30              |   liver      |   18   |
 |   MI125Li.coverage          |   45              |   liver      |   18   |
-|   MI127Li.coverage          |   15              |   liver      |   18   |
+|   MI127Li.coverage          |   15              |   liver      |   18   |  
  
 
 </details>
