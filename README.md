@@ -159,10 +159,71 @@ Align ribosomal fotprints against ```mRNA_100uniq.fasta```
 
 <details><summary><b>R-friendly ribosome coverage plots</b></summary>  
  
- Run custom perl scipts to calculate ORFs coverage profiles and a metaprofile for every sample.   
+ Run custom perl scipts to calculate ORFs coverage profiles for every sample.   
  ```bash
  perl Coverage.pl uniq.bwt
  # requires mRNA_100uniq.fastq in the same folder with uniq.bwt
- perl Coverage_processor.pl 2000 start *.coverage
  ```
+Transfer coverage files to a separate folder, give them appropriate names, for instance "MI26Li.coverage" and organize a txt table with sample names and description factors for subsequent analysis. Below is the example of a table I got:  
+
+<details><summary>Table</summary> 
+
+| Sample coverage file        | timepoint (sec)   |    organ     |   age  |
+| --------------------------- |:-----------------:| -:----------:| :----: |
+|   MI26K.coverage            |   0               |   kidney     |   3    |
+|   MI26Li.coverage           |   0               |   liver      |   3    |
+|   MI26SKM.coverage          |   0               |   skeletal   |   3    |
+|   MI27K.coverage            |   0               |   kidney     |   3    |
+|   MI27Li.coverage           |   0               |   liver      |   3    |
+|   MI27SKM.coverage          |   0               |   skeletal   |   3    |
+|   MI28Li.coverage           |   0               |   liver      |   3    |
+|   MI29Li.coverage           |   0               |   liver      |   3    |
+|   MI43K.coverage            |   30              |   kidney     |   3    |
+|   MI43Li.coverage           |   30              |   liver      |   3    |
+|   MI43SKM.coverage          |   30              |   skeletal   |   3    |
+|   MI44K.coverage            |   45              |   kidney     |   3    |
+|   MI44Li.coverage           |   45              |   liver      |   3    |
+|   MI50K.coverage            |   15              |   kidney     |   3    |
+|   MI50Li.coverage           |   15              |   liver      |   3    |
+|   MI51K.coverage            |   15              |   kidney     |   3    | 
+|   MI51Li.coverage           |   15              |   liver      |   3    |
+|   MI51SKM.coverage          |   15              |   skeletal   |   3    |
+|   MI52K.coverage            |   30              |   kidney     |   3    |
+|   MI52Li.coverage           |   30              |   liver      |   3    |
+|   MI52SKM.coverage          |   30              |   skeletal   |   3    |
+|   MI53K.coverage            |   45              |   kidney     |   3    |
+|   MI53Li.coverage           |   45              |   liver      |   3    |
+|   MI53SKM.coverage          |   45              |   skeletal   |   3    |
+|   MI70SKM.coverage          |   15              |   skeletal   |   3    |
+|   MI71K.coverage            |   15              |   kidney     |   3    |
+|   MI71Li.coverage           |   15              |   liver      |   3    |
+|   MI71SKM.coverage          |   15              |   skeletal   |   3    |
+|   MI72K.coverage            |   30              |   kidney     |   3    |
+|   MI72Li.coverage           |   30              |   liver      |   3    |
+|   MI72SKM.coverage          |   30              |   skeletal   |   3    |
+|   MI73K.coverage            |   45              |   kidney     |   3    |
+|   MI75K.coverage            |   15              |   kidney     |   3    |
+|   MI76K.coverage            |   30              |   kidney     |   3    |
+|   MI77K.coverage            |   45              |   kidney     |   3    |
+|   MI77Li.coverage           |   45              |   liver      |   3    |
+|   MI77SKM.coverage          |   45              |   skeletal   |   3    |
+|   MI13-16poolLi.coverage    |   300             |   liver      |   3    |
+|   MI13-16poolK.coverage     |   300             |   kidney     |   3    |
+|   MI13-16poolSKM.coverage   |   300             |   skeletal   |   3    |
+|   MI106Li.coverage          |   30              |   liver      |   18   |
+|   MI107Li.coverage          |   45              |   liver      |   18   |
+|   MI108Li.coverage          |   15              |   liver      |   18   |
+|   MI109Li.coverage          |   30              |   liver      |   18   |
+|   MI111Li.coverage          |   15              |   liver      |   18   |
+|   MI113Li.coverage          |   45              |   liver      |   18   |
+|   MI118Li.coverage          |   30              |   liver      |   18   |
+|   MI119Li.coverage          |   15              |   liver      |   18   |
+|   MI120Li.coverage          |   45              |   liver      |   18   |
+|   MI122Li.coverage          |   30              |   liver      |   18   |
+|   MI125Li.coverage          |   45              |   liver      |   18   |
+|   MI127Li.coverage          |   15              |   liver      |   18   |
+ 
+
+</details>
+ 
 </details>
