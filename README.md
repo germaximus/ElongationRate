@@ -8,7 +8,7 @@
 [blast+ 2.9.0](https://blast.ncbi.nlm.nih.gov/)
 
 Transcriptome (polyA captured mRNA-seq) samples were sequenced in PE100 mode on Illumina sequencer. Libraries were prepared with Nextera kit.
-Raw sequencing files are available from [GEO]().
+Raw sequencing files are available from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE112223).
 
 ### Preparing genome annotation and index files
 Mouse genomic sequences and annotation files (GRCm38.p6) were downloaded from the [NCBI repository](http://ftp.ncbi.nih.gov/genomes/M_musculus/). 
