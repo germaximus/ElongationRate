@@ -237,5 +237,8 @@ Transfer coverage files to a separate folder, give them appropriate names, for i
 </details>
 
 <details><summary><b>Main Analysis</b></summary>  
-Main analysis including statistical analysis, plots, and interactive visualization tools can be accesses by opening ```elongationRate.R``` file in Rstudio and proceeding from there.  
+ 
+Main analysis including statistical analysis, plots, and interactive visualization tools can be accesses by opening ```elongationRate.R``` file in Rstudio and proceeding from there.    
 </details>
+
+
