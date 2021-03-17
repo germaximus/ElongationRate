@@ -1,0 +1,16 @@
+filename	timepoint	organ
+MI26.coverage	0	kidney
+MI27.coverage	0	kidney
+MI43.coverage	30	kidney
+MI44.coverage	45	kidney
+MI50.coverage	15	kidney
+MI51.coverage	15	kidney
+MI52.coverage	30	kidney
+MI53.coverage	45	kidney
+MI71.coverage	15	kidney
+MI72.coverage	30	kidney
+MI73.coverage	45	kidney
+MI75.coverage	15	kidney
+MI76.coverage	30	kidney
+MI77.coverage	45	kidney
+MI13-16.coverage	300	kidney
