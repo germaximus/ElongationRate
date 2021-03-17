@@ -244,6 +244,6 @@ Extra bits of analysis that are not part of the manuscript
 Epas-1 gene has one annotated uORF and several putative ORFs base on the 5' UTR sequence.  
 Harringtonine treatment highlights UTR regions capable of translation initiation. Refer to the ```epas1``` folder for R script and figures.  
 
-<img src="Epas1/epas1.png">  
+<img src="epas1/epas1.png">  
 
 </details>
