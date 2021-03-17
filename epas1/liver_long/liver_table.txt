@@ -1,1 +1,15 @@
-
+filename	timepoint	organ
+MI26.coverage	0	liver
+MI27.coverage	0	liver
+MI28.coverage	0	liver
+MI29.coverage	0	liver
+MI43.coverage	30	liver
+MI44.coverage	45	liver
+MI50.coverage	15	liver
+MI51.coverage	15	liver
+MI52.coverage	30	liver
+MI53.coverage	45	liver
+MI71.coverage	15	liver
+MI72.coverage	30	liver
+MI77.coverage	45	liver
+MI13-16.coverage	300	liver
