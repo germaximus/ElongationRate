@@ -1,6 +1,7 @@
 # ElongationRate
 
-Data analysis for the study [Gerashchenko MV, Peterfi Z, Yim SH, Gladyshev VN. Translation elongation rate varies among organs and decreases with age. Nucleic Acids Res. 2021 Jan 25;49(2):e9. PMID: 33264395; PMCID: PMC7826258](https://doi.org/10.1093/nar/gkaa1103)      
+Data analysis for the study  
+[Gerashchenko MV, Peterfi Z, Yim SH, Gladyshev VN. Translation elongation rate varies among organs and decreases with age. Nucleic Acids Res. 2021 Jan 25;49(2):e9. PMID: 33264395; PMCID: PMC7826258](https://doi.org/10.1093/nar/gkaa1103)      
 
 **Prerequisites:**  
 [cutadapt 2.5](https://cutadapt.readthedocs.io/en/stable/index.html)  
