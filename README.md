@@ -1,5 +1,7 @@
 # ElongationRate
 
+Data analysis for the study [Translation elongation rate varies among organs and decreases with age](https://doi.org/10.1093/nar/gkaa1103)    
+
 **Prerequisites:**  
 [cutadapt 2.5](https://cutadapt.readthedocs.io/en/stable/index.html)  
 [STAR-2.7.2b](https://github.com/alexdobin/STAR)  
@@ -11,7 +13,7 @@ Transcriptome (polyA captured mRNA-seq) samples were sequenced in PE100 mode on 
 Raw sequencing files are available from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE112223).
 
 ### Preparing genome annotation and index files
-Mouse genomic sequences and annotation files (GRCm38.p6) were downloaded from the [NCBI repository](http://ftp.ncbi.nih.gov/genomes/M_musculus/). 
+Mouse genomic sequences and annotation files (GRCm38.p6) were downloaded from the [NCBI repository](https://ftp.ncbi.nih.gov/genomes/refseq/vertebrate_mammalian/Mus_musculus/all_assembly_versions/GCF_000001635.26_GRCm38.p6/). 
 To obtain genome assembly, download fasta files of individual chromosomes from ```Assembled_chromosomes/seq/``` folder and concatenate them in the ascending order (omit mitochondrial chromosome and sex chromosomes). Edit chromosome names to match annotation names in gff3 (for example convert ```>ref|NC_000067.6|``` to ```>NC_000067.6```) and say thanks to the NIH staff for letting you do it.  
 
 | files               | MD5 check sum (unzipped)         | Description                                               |
@@ -124,15 +126,7 @@ perl BarcodeSplitter_8nt.pl genomic.fastq
 ```
 </details>
 
-
-
-
-
 </details>
-
-
-
-
 
 <details><summary><b>Mapping ribosomal footprints to unique ORFs</b></summary>  
  
@@ -241,4 +235,14 @@ Transfer coverage files to a separate folder, give them appropriate names, for i
 Main analysis including statistical analysis, plots, and interactive visualization tools can be accesses by opening ```elongationRate.R``` file in Rstudio and proceeding from there.    
 </details>
 
+<details><summary><b>Extras</b></summary>  
 
+Extra bits of analysis that are not part of the manuscript  
+
+### Epas1 upstream reading frames  
+Epas-1 gene has one annotated uORF and several putative ORFs base on the 5' UTR sequence.  
+Harringtonine treatment highlights UTR regions capable of translation initiation.  
+
+
+
+</details>
