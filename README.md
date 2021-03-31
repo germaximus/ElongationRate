@@ -6,8 +6,8 @@ Data analysis for the study
 **Prerequisites:**  
 [cutadapt 2.5](https://cutadapt.readthedocs.io/en/stable/index.html)  
 [STAR-2.7.2b](https://github.com/alexdobin/STAR)  
-[bowtie 1.2.3](http://bowtie-bio.sourceforge.net/index.shtml)
-[gffread utility](http://ccb.jhu.edu/software/stringtie/gff.shtml)  
+[bowtie 1.2.3](http://bowtie-bio.sourceforge.net/index.shtml)  
+[gffread utility](http://ccb.jhu.edu/software/stringtie/gff.shtml)    
 [blast+ 2.9.0](https://blast.ncbi.nlm.nih.gov/)
 
 Transcriptome (polyA captured mRNA-seq) samples were sequenced in PE100 mode on Illumina sequencer. Libraries were prepared with Nextera kit.
